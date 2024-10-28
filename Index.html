@@ -5,56 +5,60 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Squedrong</title>
-    <link rel="stylesheet" href="style-index.css">
+    <link rel="stylesheet" href="assets/css/style-index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Manrope:wght@200..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
     <header>
-        <img src="assets/images/logo.png" alt="">
+        <a href="Index.html"><img src="assets/images/logo.png" alt="logo Squedrong"></a>
+        <nav>
+            <a href="blog-post.html" class="active">BLOG</a>
+            <a href="">CV</a>
+            <a href="a-propos.html">A PROPOS</a>
+            <a href="contact.html">CONTACT</a>
+        </nav>
     </header>
-    <nav>
-        <a href="Index.html">BLOG</a>
-        <a href="">CV</a>
-        <a href="">A PROPOS</a>
-        <a href="">CONTACT</a>
-    </nav>
-    <Section id="logo">
-        <h1>Bienvenue sur le blog !</h1>
-    </Section>
-    <article id="A1">
-        <h1>Lorem ipsun</h1>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim harum possimus reprehenderit debitis voluptate
-            numquam veniam temporibus fugiat modi dolorum. Esse corporis doloribus nesciunt minima rem alias saepe iste
-            sit. </p>
-        <article id="n1">
-            <div class="card" id="card">
-                <img src="assets/images/Ecranpc1.jpg" alt="pc1">
-                <div class="container">
-                    <p>13 jan 2022</p>
-                    <h4><b>Lorem ipsum dolor sit amet.</b></h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo quo aspernatur eveniet officia
-                        iusto
-                        expedita tempore necessitatibus laudantium facere? Nemo veritatis voluptates suscipit iusto
-                        doloremque, ut maiores neque. Eos, nisi?</p>
-                    <p id="savoirplus">EN SAVOIR PLUS</p>
+    <main>
+        <section class="cards">
+            <div class="card">
+                <div class="image-container">
+                    <img src="assets/images/Ecranpc1.jpg" alt="Image 1">
+                </div>
+                <div class="card-content">
+                    <p class="date">13 JAN 2022</p>
+                    <h3>Lorem ipsum dolor sit amet.</h3>
+                    <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ultricies mi
+                        facilisis libero sollicitudin vulputate. Mauris facilisis vestibulum nisi, at viverra arcu
+                        interdum id.</p>
+                    <a href="#" class="learn-more">EN SAVOIR PLUS</a>
                 </div>
             </div>
             <div class="card">
-                <img src="assets/images/Ecranpc2.jpg" alt="pc1">
-                <div class="container">
-                    <p>13 jan 2022</p>
-                    <h4><b>Lorem ipsum dolor sit amet.</b></h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo quo aspernatur eveniet officia
-                        iusto
-                        expedita tempore necessitatibus laudantium facere? Nemo veritatis voluptates suscipit iusto
-                        doloremque, ut maiores neque. Eos, nisi?</p>
-                    <p id="savoirplus">EN SAVOIR PLUS</p>
+                <div class="image-container">
+                    <img src="assets/images/Ecranpc2.jpg" alt="Image 2">
+                </div>
+                <div class="card-content">
+                    <p class="date">13 JAN 2022</p>
+                    <h3>Lorem ipsum dolor sit amet.</h3>
+                    <p class="description">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ultricies mi
+                        facilisis libero sollicitudin vulputate. Mauris facilisis vestibulum nisi, at viverra arcu
+                        interdum id.</p>
+                    <a href="#" class="learn-more">EN SAVOIR PLUS</a>
                 </div>
             </div>
-        </article>
-        <aside>
-        </aside>
-        <footer></footer>
+        </section>
+    </main>
+    <footer></footer>
 
 </body>
 
