@@ -17,7 +17,6 @@
         href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Manrope:wght@200..800&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
         rel="stylesheet">
 </head>
-</head>
 
 <body>
     <header>
@@ -29,27 +28,26 @@
             <a href="contact.html" class="active">CONTACT</a>
         </nav>
     </header>
-    <article>
-        <main>
-
-
-            <label for="name">Nom&nbsp;:</label>
-            <input type="text" id="name" name="user_name" /><br>
-
-
-            <label for="mail">E-mail&nbsp;:</label>
-            <input type="email" id="mail" name="user_mail" /><br>
-
-
-            <label for="msg">Message&nbsp;:</label>
-            <textarea id="msg" name="user_message"></textarea>
-
-
-
-        </main>
-    </article>
-    <footer><input type="submit" value="Submit"></footer>
-
+    <main>
+        <article>
+            <div class="container">
+                <div class="form">
+                    <h2>Contactez nous</h2>
+                    <div class="inpuBox">
+                        <input type="text" id="name" name="user_name" placeholder="Utilisateur" /><br>
+                    </div>
+                    <div class="inputBox">
+                        <input type="email" id="mail" name="user_mail" placeholder="Email" /><br>
+                    </div>
+                    <div class="inputBox"></div>
+                    <textarea id="msg" name="user_message" placeholder="Message"></textarea><br>
+                    <div class="inputBox">
+                        <input type="submit" value="Envoyez">
+                    </div>
+                </div>
+            </div>
+        </article>
+    </main>
 </body>
 
 </html>

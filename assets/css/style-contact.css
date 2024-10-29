@@ -37,21 +37,80 @@ nav a:hover {
     color: #5b4cc8;
 }
 
-body {
-    font-family: Arial, sans-serif;
-    color: #333;
-    line-height: 1.6;
-
+main {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
 }
 
-label {
-    color: #1121b8;
+.container {
+    position: relative;
+    width: 380px;
+    height: 420px;
+    border-radius: 8px;
+    overflow: hidden;
+    background: #8c8c8c;
+}
+
+.container::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 380px;
+    height: 420px;
+    background: linear-gradient(0deg, transparent, #db5c7d, #db5c7d);
+    transform-origin: bottom right;
+    animation: animate 8s linear infinite;
+}
+
+.container::after {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 380px;
+    height: 420px;
+    background: linear-gradient(0deg, transparent, #db5c7d, #db5c7d);
+    transform-origin: bottom right;
+    animation: animate 8s linear infinite;
+    animation-delay: 4s;
+}
+
+@keyframes animate {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.form {
+    position: absolute;
+    inset: 3px;
+    border-radius: 8px;
+    background-color: #8c8c8c;
+    z-index: 10;
+    padding: 50px 40px;
+    display: flex;
+    flex-direction: column;
+}
+
+.form h2 {
     text-align: center;
-
+    letter-spacing: 0.1em;
+    color: #5b4cc8;
 }
 
-input[type="text"],
-input[type="email"] {
-    width: 30%;
-    box-sizing: border-box;
+.inputBox {
+    position: relative;
+    width: 300px;
+    margin-top: 35px;
+}
+
+input[type="submit"] {
+    border: 1px solid #fff;
+    background: #db5c7d;
+    color: #fff;
+    cursor: pointer;
+    margin-top: 20px;
 }
