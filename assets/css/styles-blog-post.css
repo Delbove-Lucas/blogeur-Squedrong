@@ -36,3 +36,61 @@ nav a.active {
 nav a:hover {
     color: #5b4cc8;
 }
+
+.imgecran {
+    max-width: 100%;
+    height: 750px;
+}
+
+.image {
+    display: flex;
+    justify-content: center;
+}
+
+.blog-details {
+    padding: 0 500px;
+}
+
+.container {
+    padding: 0 500px;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.n1 {
+    width: 400px;
+    height: auto;
+}
+
+.image-content img {
+    width: 400px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.button {
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    text-align: center;
+}
+
+.twitter {
+    background-color: #1DA1F2;
+}
+
+.linkedin {
+    background-color: #0077B5;
+}
+
+.medium {
+    background-color: #000;
+}
+
+.a-propos {
+    color: #db5c7d;
+}
